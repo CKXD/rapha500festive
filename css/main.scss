@@ -1,0 +1,80 @@
+
+$color1: #B33D16;
+$color2: #EEA88E;
+$color3: #5F5653;
+$color4:#040404;
+$color5:#232CFB;
+
+// General settings HTML
+
+html {
+    background: $color1;
+    color: floralwhite;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    padding: 2rem;
+    
+    
+}
+
+.lp-grey {
+
+    background-color: $color3;
+    
+}
+
+.lp-orange {
+
+    background-color: $color1;
+}
+
+.rapha500header p {
+
+    position: absolute;
+    width: 853px;
+    height: 109px;
+    left: 100px;
+    top: 35px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    
+    color: #FFFFFF;
+    
+
+}
+
+.fixed-nav-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: auto;
+    
+  }
+
+  .Intro-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "Header Header Header Logo" "Pic1 Pic1 Pic2 Pic2" "Pic1 Pic1 Pic2 Pic2" "TextIntro TextIntro TextIntro TextIntro";
+  }
+  
+  .Intro-Header { grid-area: Intro-Header; }
+  
+  .Intro-Logo { grid-area: Intro-Logo; }
+  
+  .Intro-Pic1 { grid-area: Intro-Pic1; }
+  
+  .Intro-Pic2 { grid-area: Intro-Pic2; }
+  
+  .Intro-TextIntro { grid-area: Intro-TextIntro; }
