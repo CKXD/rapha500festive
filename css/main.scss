@@ -1,11 +1,19 @@
 
 $color1: #B33D16;
+$color1light: rgba(179, 61, 22,0.8);
+
 $color2: #EEA88E;
 $color3: #5F5653;
 $color4:#040404;
 $color5:#232CFB;
 
 // General settings HTML
+* {
+    box-sizing:border-box;
+    text-align:center;
+    width: auto;
+    
+  }
 
 html {
     background: $color1;
@@ -13,44 +21,50 @@ html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    vertical-align: center;
+        min-width: 320px;
 }
 
 section {
-    height: 100vh;
-    padding: 2rem;
+    min-height: 100vh;
+    padding: 0rem;
+    
     
     
 }
+ h1 {
+     font-size: 5rem;
+ }
+ h3 {
+    font-size: 3rem;
+}
 
-.lp-grey {
+
+ @media screen and (max-width: 800px){
+    h1 {
+        font-size: 3.3rem;
+    }
+    h3 {
+        font-size: 2.2rem;
+    }
+
+ }
+
+img {
+    background: black;
+}
+
+.lp-background-grey {
 
     background-color: $color3;
     
 }
 
-.lp-orange {
+.lp-background-orange {
 
     background-color: $color1;
 }
 
-.rapha500header p {
-
-    position: absolute;
-    width: 853px;
-    height: 109px;
-    left: 100px;
-    top: 35px;
-    
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 96px;
-    line-height: 112px;
-    
-    color: #FFFFFF;
-    
-
-}
 
 .fixed-nav-bar {
     position: fixed;
@@ -62,19 +76,72 @@ section {
     
   }
 
-  .Intro-grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "Header Header Header Logo" "Pic1 Pic1 Pic2 Pic2" "Pic1 Pic1 Pic2 Pic2" "TextIntro TextIntro TextIntro TextIntro";
+
+.ld-Logo {
+    position: fixed;
+    top: 3rem;
+    right: 1rem;
+    z-index: 9999;
+    max-width: 100%;
+    height: auto;
+    
+}  
+
+.pic_wrapper {
+
+    display: flexbox;
+    flex-direction: row;
+    text-align: center;
+    vertical-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    border-radius: 2em;
+   
+
+}
+
+.pic {
+    display: inline;
+    max-width: 640px;
+    min-width: 220px;
+    border-radius: 2em;
+    right: 3rem;
+
+}
+
+.pic1 {
+    transform: rotate(-5deg);
+    
+    
+}
+
+.pic2 {
+    transform: rotate(+5deg);
+    
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+
+}
+
+figcaption {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    color:white;
+    line-height:10rem;
+    z-index: 2;
   }
-  
-  .Intro-Header { grid-area: Intro-Header; }
-  
-  .Intro-Logo { grid-area: Intro-Logo; }
-  
-  .Intro-Pic1 { grid-area: Intro-Pic1; }
-  
-  .Intro-Pic2 { grid-area: Intro-Pic2; }
-  
-  .Intro-TextIntro { grid-area: Intro-TextIntro; }
+
+  .untertitel {
+    position: relative;
+    text-align: center;
+    padding: 0rem 5rem;
+
+  }
