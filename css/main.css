@@ -22,10 +22,12 @@ section {
 
 h1 {
   font-size: 5rem;
+  text-shadow: 3px 3px 3px rgba(4, 4, 4, 0.7);
 }
 
 h3 {
   font-size: 3rem;
+  text-shadow: 3px 3px 3px rgba(4, 4, 4, 0.7);
 }
 
 p {
@@ -40,17 +42,24 @@ p {
   h3 {
     font-size: 2.2rem;
   }
+  .lp-Logo {
+    max-width: 60%;
+  }
 }
 
 img {
   background: black;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+          box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
 }
 
 .lp-background-grey {
+  position: relative;
   background-color: #5F5653;
 }
 
 .lp-background-orange {
+  position: relative;
   background-color: #B33D16;
 }
 
@@ -63,13 +72,12 @@ img {
   height: auto;
 }
 
-.ld-Logo {
-  position: fixed;
-  top: 3rem;
-  right: 1rem;
+.lp-Logo {
+  position: absolute;
+  top: 5px;
+  right: 5px;
   z-index: 9999;
   max-width: 100%;
-  height: auto;
 }
 
 .pic_wrapper {
@@ -94,13 +102,13 @@ img {
 }
 
 .pic1 {
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
 }
 
 .pic2 {
-  -webkit-transform: rotate(5deg);
-          transform: rotate(5deg);
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
 }
 
 figure {
@@ -128,6 +136,7 @@ figcaption {
 }
 
 .lp_subtitle {
+  position: relative;
   display: inline;
   background: #232CFB;
   color: #EEA88E;
@@ -137,6 +146,9 @@ figcaption {
   text-align: center;
   line-height: 8rem;
   border-radius: 0.85rem;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+          box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+  font-style: italic;
 }
 
 .textwrapper {
@@ -158,6 +170,11 @@ figcaption {
   max-width: 45%;
   width: auto;
   padding: 2rem;
+}
+
+.lp_einleitung {
+  font-weight: 700;
+  color: #040404;
 }
 
 .lp_textpic {
@@ -182,6 +199,9 @@ figcaption {
     max-width: 90%;
     padding: 2rem;
   }
+  .lp_einleitung {
+    font-weight: 900;
+  }
   .lp_textpic {
     position: relative;
     max-width: 90%;
@@ -193,6 +213,11 @@ figcaption {
     text-align: center;
     line-height: 2rem;
     border-radius: 0.85rem;
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+            box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+  }
+  .lp-Logo {
+    max-width: 60%;
   }
 }
 /*# sourceMappingURL=main.css.map */

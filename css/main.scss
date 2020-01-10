@@ -1,11 +1,13 @@
 
 $color1: #B33D16;
-$color1light: rgba(179, 61, 22,0.8);
+$color1light: rgba(197, 82, 43, 0.8);
 
 $color2: #EEA88E;
 $color3: #5F5653;
-$color4:#040404;
+$color4:rgb(4, 4, 4);
 $color5:#232CFB;
+$shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+$shadow_text: 3px 3px 3px rgba(4, 4, 4, 0.7);
 
 // General settings HTML
 * {
@@ -32,9 +34,17 @@ section {
     
     
 }
-h1 {font-size: 5rem; }
+h1 {
+  font-size: 5rem;
+  text-shadow: $shadow_text ;
+  
+  
+}
 
-h3 {font-size: 3rem;}
+h3 {
+  font-size: 3rem;
+  text-shadow: $shadow_text ;
+}
 
 p {font-size: 1.75rem; text-align: left;}
 
@@ -45,22 +55,28 @@ p {font-size: 1.75rem; text-align: left;}
     h3 {
         font-size: 2.2rem;
     }
-    
+    .lp-Logo{
+
+      max-width: 60%;
+    }
  }
 
 img {
     background: black;
+    box-shadow: $shadow;
 }
 
 .lp-background-grey {
-
+    position: relative;
     background-color: $color3;
+
     
 }
 
 .lp-background-orange {
-
+    position: relative;
     background-color: $color1;
+    
 }
 
 
@@ -75,13 +91,13 @@ img {
   }
 
 
-.ld-Logo {
-    position: fixed;
-    top: 3rem;
-    right: 1rem;
+.lp-Logo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
     z-index: 9999;
     max-width: 100%;
-    height: auto;
+    
     
 }  
 
@@ -108,13 +124,13 @@ img {
 }
 
 .pic1 {
-    transform: rotate(-5deg);
+    transform: rotate(-2deg);
     
     
 }
 
 .pic2 {
-    transform: rotate(+5deg);
+    transform: rotate(+2deg);
     
 }
 
@@ -146,6 +162,7 @@ figcaption {
   }
 
   .lp_subtitle {
+    position: relative;
     display: inline;
     background: $color5;
     color: $color2;
@@ -155,6 +172,8 @@ figcaption {
     text-align: center;
     line-height: 8rem;
     border-radius: 0.85rem;
+    box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
+    font-style: italic;
   }
 
   .textwrapper {
@@ -172,7 +191,11 @@ figcaption {
     width: auto;
     padding: 2rem;
     
+  }
 
+  .lp_einleitung {
+    font-weight: 700;
+    color: $color4;
   }
   .lp_textpic {
       position: relative;
@@ -194,6 +217,10 @@ figcaption {
         padding: 2rem;
     
       }
+      .lp_einleitung {
+        font-weight: 900;
+
+      }
       .lp_textpic {
           position: relative;
           max-width: 90%;
@@ -206,7 +233,11 @@ figcaption {
         text-align: center;
         line-height: 2rem;
         border-radius: 0.85rem;
+        box-shadow: 5px 5px 5px 0px rgba(4, 4, 4, 0.7);
       }
+      .lp-Logo{
 
+        max-width: 60%;
+      }
   }
 
