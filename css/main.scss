@@ -57,6 +57,9 @@ p {font-size: 1.75rem; text-align: left;}
 
       max-width: 60%;
     }
+    p {
+      font-size: 1.15rem;
+    }
  }
 
 img {
@@ -115,8 +118,8 @@ img {
 .pic {
     display: inline;
     max-width: 640px;
-    min-width: 220px;
-    border-radius: 2em;
+    min-width: 280px;
+    border-radius: 1.2em;
     right: 3rem;
 
 }
@@ -200,7 +203,7 @@ figcaption {
       max-width: 45%;
   }
 
-  @media screen and (max-width: 1000px){
+  @media screen and (max-width: 1200px){
 
     .textwrapper {
         display: flex;
