@@ -1,7 +1,5 @@
 
 $color1: #B33D16;
-$color1light: rgba(197, 82, 43, 0.8);
-
 $color2: #EEA88E;
 $color3: #5F5653;
 $color4:rgb(4, 4, 4);
@@ -241,3 +239,14 @@ figcaption {
       }
   }
 
+  .footer-align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    color: floralwhite;
+    
+
+  }
